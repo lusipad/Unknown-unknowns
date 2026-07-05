@@ -99,7 +99,7 @@ flowchart LR
 
 Thariq 的
 [*A Field Guide to Fable: Finding Your Unknowns*](https://x.com/trq212/article/2073100352921215386)
-里的九种技巧全都在——作为 Agent 的内部工具箱（每个 skill 的 `references/`），按需
+里的八种技巧全都在——作为 Agent 的内部工具箱（每个 skill 的 `references/`），按需
 加载。你永远不需要叫出它们的名字：
 
 | 你说…… | kickoff 会拿出 |
@@ -109,6 +109,23 @@ Thariq 的
 | "还有些事我没想好" | 一次一个问题的访谈 |
 | "照着这个库做一个" | 参考实现语义提炼 |
 | "好了，可以开始建了" | unknowns 优先的计划 + 实现笔记 |
+
+<details>
+<summary><b>展开看全部八种技巧</b></summary>
+<br/>
+
+| 技巧 | 阶段 | 做什么 | 文档 |
+|---|---|---|---|
+| 盲区扫描 | 实现前 | 探索你不熟的领域，汇报你不知道该问的问题、坑、既有方案、以及"好"的标准 | [blindspot.md](./skills/kickoff/references/blindspot.md) |
+| 头脑风暴 + 原型 | 实现前 | 5–10 个方案按"最便宜→最激进"排序，或 3–4 个风格迥异的单文件 HTML 原型；你的反应被沉淀成明确的判断标准 | [brainstorm.md](./skills/kickoff/references/brainstorm.md) |
+| 访谈 | 实现前 | 一次一个问题，先问影响架构最大的，每题附推荐默认值；产出可直接粘贴的决策日志 | [interview.md](./skills/kickoff/references/interview.md) |
+| 参考实现提炼 | 实现前 | 读参考的真实源码，先产出"保留/改造/舍弃"语义清单，再动手写代码 | [use-reference.md](./skills/kickoff/references/use-reference.md) |
+| unknowns 优先的计划 | 实现前 | 最可能被改的决策放最前（附置信度和"什么会推翻它"），机械性工作沉底 | [plan.md](./skills/kickoff/references/plan.md) |
+| 实现笔记 | 实现中 | 边干边记决策、偏差和意外；遇到意外选保守方案继续推进，而不是停下来干等 | [impl-notes.md](./skills/kickoff/references/impl-notes.md) |
+| 提案文档 | 实现后 | demo 开头的 buy-in 文档，评审者还没开口就先回答他们的疑问 | [pitch.md](./skills/wrapup/references/pitch.md) |
+| 理解测验 | 实现后 | 报告覆盖 diff 看不到的部分，然后严格打分的测验守住合并关口 | [quiz.md](./skills/wrapup/references/quiz.md) |
+
+</details>
 
 ## 安装
 

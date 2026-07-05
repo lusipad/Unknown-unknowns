@@ -83,7 +83,7 @@ What you learn becomes the map for next time.
 
 ## What's inside
 
-The nine techniques from Thariq's
+The eight techniques from Thariq's
 [*A Field Guide to Fable: Finding Your Unknowns*](https://x.com/trq212/article/2073100352921215386)
 are all here — as the agent's internal toolbox (`references/` in each skill), loaded
 only when needed. You never have to name them:
@@ -95,6 +95,23 @@ only when needed. You never have to name them:
 | "There are decisions I haven't made" | One-question-at-a-time interview |
 | "Make it work like this library" | Reference semantics extraction |
 | "OK, ready to build" | Unknowns-first plan + implementation notes |
+
+<details>
+<summary><b>Peek inside: all eight techniques</b></summary>
+<br/>
+
+| Technique | Phase | What it does | Doc |
+|---|---|---|---|
+| Blind spot pass | before | Explores unfamiliar territory, briefs you on the questions you didn't know to ask, potholes, prior art, and what good looks like | [blindspot.md](./skills/kickoff/references/blindspot.md) |
+| Brainstorm & prototypes | before | 5–10 approaches ranked cheapest → most ambitious, or 3–4 wildly different single-file HTML mockups; your reactions become explicit criteria | [brainstorm.md](./skills/kickoff/references/brainstorm.md) |
+| Interview | before | One question at a time, biggest architectural blast radius first, each with a suggested default; ends in a paste-ready decision log | [interview.md](./skills/kickoff/references/interview.md) |
+| Reference extraction | before | Reads a reference's actual source, produces a keep/adapt/drop semantics checklist before any code is written | [use-reference.md](./skills/kickoff/references/use-reference.md) |
+| Unknowns-first plan | before | Most-likely-to-change decisions on top (with confidence + what would flip them); mechanical work buried at the bottom | [plan.md](./skills/kickoff/references/plan.md) |
+| Implementation notes | during | Logs decisions, deviations, and surprises as they happen; conservative option + keep going instead of stalling | [impl-notes.md](./skills/kickoff/references/impl-notes.md) |
+| Pitch & explainer | after | One demo-first buy-in doc that answers reviewers' objections before they ask | [pitch.md](./skills/wrapup/references/pitch.md) |
+| Understanding quiz | after | Report covering what diffs don't show, then a strictly graded quiz that gates the merge | [quiz.md](./skills/wrapup/references/quiz.md) |
+
+</details>
 
 ## Install
 
@@ -149,7 +166,7 @@ speaking**. Triggering works in any language via semantic matching; 中文 trigg
 - **Moments, not taxonomy.** People reliably feel *starting* and *finishing*; they don't
   reliably notice "I have unknown knowns." Commands map to the former; the agent handles
   the latter.
-- **Progressive disclosure.** Three entry points; nine techniques as reference files
+- **Progressive disclosure.** Three entry points; eight techniques as reference files
   read on demand — cheap on context until needed.
 - **Portable by construction.** Frontmatter is only `name` + `description` (the open
   [Agent Skills](https://agentskills.io) format); bodies contain no agent-specific tool
