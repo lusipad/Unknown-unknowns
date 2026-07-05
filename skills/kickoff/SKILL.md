@@ -1,0 +1,69 @@
+---
+name: kickoff
+description: Kickoff (开工) — run before starting any non-trivial task. Diagnoses the gap between what the user asked for (the map) and what the codebase or domain actually requires (the territory), then applies only the techniques needed — blindspot briefing for unfamiliar territory, throwaway prototypes for "I'll know it when I see it", one-question-at-a-time interviews for ambiguities, reference extraction, and an unknowns-first plan. Use when the user says "kickoff", "开工", "帮我开始", "找找我的盲区", "help me start", "find my unknowns", "what am I missing", "I don't know where to start", or when a previous AI attempt came back wrong and they don't know why.
+---
+
+# Kickoff
+
+The user's request is the map. The codebase and the real world are the territory. The
+difference between them is the user's **unknowns** — and when you hit one mid-task, you
+guess. This skill spends a little time up front so you guess less later.
+
+**The deliverable is clarity, not code.** Kickoff never implements.
+
+**Language:** write everything user-facing — briefings, questions, prototypes' copy,
+plans — in the language the user is speaking. File names and code identifiers stay in
+English.
+
+## Step 1 — Diagnose (quietly)
+
+Read the request, glance at the relevant territory (code, docs, history), and score four
+signals. Don't announce the framework; just assess:
+
+| Signal | Evidence |
+|---|---|
+| **Unfamiliar territory** | New domain or untouched part of the codebase; user says "I've never…" / "I don't know X" |
+| **Taste-driven criteria** | Vague quality words — "clean", "modern", "feels right" — user will know it when they see it |
+| **Open decisions** | Ambiguities where different answers produce different architectures |
+| **A reference exists** | User points at (or you find) code, a library, or a site that already does it |
+
+Also collect the user's starting point if not stated: their experience with this problem
+and codebase, and where they are in their thinking. One short question at most.
+
+## Step 2 — Run only what fires
+
+For each technique you run, **read its reference file first** and follow it:
+
+| Fires when | Technique | Read |
+|---|---|---|
+| Unfamiliar territory | Blind spot pass — brief them on the questions they didn't know to ask | `references/blindspot.md` |
+| Taste-driven criteria | Brainstorm & throwaway prototypes — turn reactions into explicit criteria | `references/brainstorm.md` |
+| A reference exists | Extract its semantics into a keep/adapt/drop checklist | `references/use-reference.md` |
+| Open decisions remain | Interview — one question at a time, biggest blast radius first | `references/interview.md` |
+
+Run them in the order listed, but **only the ones that fired** — kickoff is a diagnosis,
+not a ceremony. Between techniques, keep the user in the loop with one-line status
+("territory is clear, but three decisions could flip the architecture — interviewing you
+next").
+
+If nothing fires: say plainly "no meaningful unknowns here — just implement", and offer
+to proceed. That answer is kickoff succeeding, not failing.
+
+## Step 3 — Always land on a handoff
+
+Every kickoff ends with one of two artifacts:
+
+- **An unknowns-first plan** (read `references/plan.md`) if the user is heading into
+  implementation. The plan embeds a deviation policy and instructs the implementer to
+  keep implementation notes (read `references/impl-notes.md` and fold its setup into the
+  plan's handoff section).
+- **A rewritten prompt** if the user just wanted clarity — their original request with
+  resolved assumptions inlined and remaining open questions flagged, ready to paste into
+  a fresh session.
+
+## Guardrails
+
+- One technique at a time; each technique's output feeds the next.
+- If diagnosis reveals the problem should be solved a different way altogether, say so
+  before anything else — that's the most valuable outcome a kickoff can have.
+- Simple task, familiar territory, clear spec → don't invent process. Say so and stop.

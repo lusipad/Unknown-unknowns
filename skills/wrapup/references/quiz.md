@@ -1,0 +1,41 @@
+# Understanding Quiz
+
+Reading diffs gives only a light understanding, because much of the new behavior depends
+on **existing code paths the diff never shows**. Explain, then verify the explanation
+landed. The user merges only after passing.
+
+## 1. Scope what "the change" really is
+
+The diff itself; the existing code paths the new code calls into or is called from;
+behavior that changed *without its code changing* (a config default now taking effect, a
+caller now hitting a different branch); and what the change relies on staying true
+(invariants, ordering, formats).
+
+## 2. Write the report
+
+1. **Why** — the problem this change solves, one paragraph
+2. **Mental model** — the intuition in one diagram or metaphor; if the user keeps one
+   idea, it's this one
+3. **What changed** — a guided walk through the diff, grouped by intent, not by file
+4. **What it stands on** — the pre-existing code paths and invariants the change
+   depends on; the part diffs never show
+5. **Where it could break** — the inputs, states, or future edits most likely to hurt it
+
+Default Markdown; a single self-contained HTML file if the change is big enough that
+navigation helps.
+
+## 3. Quiz — 5–8 questions, must include one of each
+
+- Behavior that depends on **pre-existing code** (not visible in the diff)
+- A **failure mode**: "what happens if <input/state X>?"
+- A **tracing** question: "a request comes in with Y — walk me through what runs"
+- A **design** question: "why was alternative Z not used?"
+
+Mix multiple choice and short answer. No trivia — every answer should matter for
+operating or reviewing this code.
+
+## 4. Grade strictly
+
+Partial credit is a fail for that question. For each miss: re-explain with a file/line
+reference, then ask a **variant** (not the same question — echoing isn't understanding).
+Repeat until everything passes.

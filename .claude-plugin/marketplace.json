@@ -1,0 +1,37 @@
+{
+  "name": "unknown-unknowns",
+  "owner": {
+    "name": "lusipad",
+    "url": "https://github.com/lusipad"
+  },
+  "metadata": {
+    "description": "Three words: kickoff when you start, wrapup when you finish, quiz-me when you're not sure. Finds your unknowns so the agent guesses less. Based on Thariq's 'A Field Guide to Fable: Finding Your Unknowns'.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "unknown-unknowns",
+      "source": "./",
+      "description": "Three commands mapped to moments you actually feel: kickoff (diagnoses your unknowns before you start — blind spot briefings, throwaway prototypes, one-question interviews, reference extraction, unknowns-first plans), wrapup (buy-in doc + understanding quiz before merge, then banks the learnings), and quiz-me (strict PASS / NOT YET understanding check). The nine techniques from Thariq's field guide live inside as the agent's internal toolbox.",
+      "version": "1.0.0",
+      "author": {
+        "name": "lusipad",
+        "url": "https://github.com/lusipad"
+      },
+      "homepage": "https://github.com/lusipad/Unknown-unknowns",
+      "repository": "https://github.com/lusipad/Unknown-unknowns",
+      "license": "MIT",
+      "keywords": [
+        "workflow",
+        "planning",
+        "unknowns",
+        "kickoff",
+        "wrapup",
+        "quiz",
+        "brainstorm",
+        "prototype"
+      ],
+      "category": "workflow"
+    }
+  ]
+}
