@@ -66,7 +66,8 @@ Format for low friction — a quiz nobody takes verifies nothing:
   judge the concept, not the prose — terse keyword answers are fine.
 - For each miss: re-explain with a file/line reference, then ask a **variant** of the
   question (not the same one — the user can echo, that's not understanding).
-- Repeat until everything passes.
+- Repeat until everything passes — or the user stops. Stopping early is always allowed
+  and always a NOT YET, never a reluctant PASS.
 
 End with an explicit verdict:
 

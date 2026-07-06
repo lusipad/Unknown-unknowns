@@ -17,6 +17,9 @@ Discard questions the territory already answers. Never ask what you can look up.
 
 ## 2. Interview
 
+- **Say how long the tunnel is.** Open with the expected count ("about six questions,
+  biggest first") and update it if answers change the list — an interview with no
+  visible end feels like ceremony, and gets abandoned.
 - **One question per turn.** Never dump a list.
 - Each question carries: the question, **why it matters** (one sentence), and **a
   suggested default** so the user can just reply "default".

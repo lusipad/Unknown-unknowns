@@ -185,6 +185,11 @@ reviewing before merge. Opt in per project:
 Appends [three lines](./rules/unknowns-rules.md) to the project's
 `CLAUDE.md` / `AGENTS.md` (idempotent — safe to re-run).
 
+Installed via the plugin marketplace or `npx skills` instead of cloning? Those paths
+ship the skills only — copy the three lines from
+[`rules/unknowns-rules.md`](./rules/unknowns-rules.md) into your project's `CLAUDE.md`
+by hand.
+
 ## Multilingual
 
 Instructions stay in English (best model adherence), but every skill requires

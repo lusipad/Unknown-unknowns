@@ -45,4 +45,5 @@ Format for low friction — a quiz nobody takes verifies nothing:
 
 Partial credit is a fail for that question. For each miss: re-explain with a file/line
 reference, then ask a **variant** (not the same question — echoing isn't understanding).
-Repeat until everything passes.
+Repeat until everything passes — or the user stops. Stopping early is always allowed
+and always a NOT YET, never a reluctant PASS.

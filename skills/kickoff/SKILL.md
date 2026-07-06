@@ -17,8 +17,9 @@ English.
 
 ## Step 1 — Diagnose (quietly)
 
-Read the request, glance at the relevant territory (code, docs, history), and score four
-signals. Don't announce the framework; just assess:
+Read the request, glance at the relevant territory (code, docs, history), and score six
+signals. Assess silently — don't lecture the framework; the diagnosis surfaces as one
+line at the top of Step 2:
 
 | Signal | Evidence |
 |---|---|
@@ -33,6 +34,12 @@ Also collect the user's starting point if not stated: their experience with this
 and codebase, and where they are in their thinking. One short question at most.
 
 ## Step 2 — Run only what fires
+
+**Open with the diagnosis in one line** — name the signals that fired, the techniques
+you'll run, and the rough cost: "Two signals fired: unfamiliar territory, open
+decisions — blind spot pass on src/auth first, then a ~5-question interview." The user
+can veto or reorder before anything runs; they should never wonder why they're being
+asked things.
 
 For each technique you run, **read its reference file first** and follow it:
 

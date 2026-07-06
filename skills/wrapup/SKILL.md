@@ -19,6 +19,11 @@ Gather whatever exists: the diff against the base branch, the plan, `implementat
 (deviations and surprises are the most valuable material), and demo evidence (screenshots,
 GIF, runnable link). For user-facing work with no demo evidence, make some first.
 
+No `implementation-notes.md`? Don't skip what it would have carried: reconstruct the
+deviations and surprises from the session history and the diff, and mention once —
+not more — that the always-on rules (`rules/unknowns-rules.md`) capture these
+automatically next time.
+
 ## Step 2 — Produce what the moment needs
 
 Two products. Decide from context, confirm with one short question only if genuinely
@@ -46,7 +51,8 @@ Never soften the verdict. Its whole value is that the user can trust a PASS.
 
 ## Step 4 — Bank the learnings
 
-From the notes' Surprises and Deviations, propose which learnings should be **promoted
+From the Surprises and Deviations (the notes', or the ones reconstructed in Step 1),
+propose which learnings should be **promoted
 to permanent context** (CLAUDE.md, AGENTS.md, or team docs) — a surprise that will
 surprise the next person too is a documentation bug. Draft the exact lines to add; let
 the user say yes or no.
