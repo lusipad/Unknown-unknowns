@@ -20,6 +20,11 @@ commits, TODO/FIXME, related PRs); what tests cover and conspicuously don't; hid
 coupling. For domain work: what an expert would consider before starting — vocabulary,
 common failure modes, how experts judge quality.
 
+**Budget the exploration.** Breadth first — file names, signatures, commit titles — and
+open whole files only when a signal points there. You're drawing a map, not auditing;
+this session still has an interview and a plan to fit after you. Where the host supports
+subagents, send them exploring and keep only their conclusions.
+
 ## 3. Deliver the briefing
 
 Exactly these sections, each tight:

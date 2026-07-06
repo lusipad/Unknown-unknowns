@@ -24,6 +24,12 @@ deviations and surprises from the session history and the diff, and mention once
 not more — that the always-on rules (`rules/unknowns-rules.md`) capture these
 automatically next time.
 
+**Mind the context budget** — wrapup runs when the session is at its fullest. Everything
+it consumes can live on disk (diff, plan, notes), so with notes on disk it runs fine in
+a fresh session — often better. Without notes, the session's memory *is* the evidence:
+run wrapup before compaction eats it. Either way, write what you produce to files, not
+only chat.
+
 ## Step 2 — Produce what the moment needs
 
 Two products. Decide from context, confirm with one short question only if genuinely

@@ -39,6 +39,9 @@ Sections, in order:
 Default to Markdown. If the user asks for HTML (or the change is big enough that
 navigation helps), produce a single self-contained HTML file with the quiz at the bottom.
 
+Write the report to a file, not only into chat — grading spans multiple turns, and the
+report is the answer key; it must survive context compaction.
+
 ## Step 3 — Quiz
 
 5–8 questions at the bottom of the report. Must include at least one of each:

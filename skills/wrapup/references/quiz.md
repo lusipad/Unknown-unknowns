@@ -24,6 +24,9 @@ caller now hitting a different branch); and what the change relies on staying tr
 Default Markdown; a single self-contained HTML file if the change is big enough that
 navigation helps.
 
+Write the report to a file, not only into chat — grading spans multiple turns, and the
+report is the answer key; it must survive context compaction.
+
 ## 3. Quiz — 5–8 questions, must include one of each
 
 - Behavior that depends on **pre-existing code** (not visible in the diff)
